@@ -90,13 +90,13 @@ namespace project2
                     .OrderByDescending(group => group.Count())
                     .First().Key;
 
-                writer.WriteLine("State that hosted the most super bowls:\n\t{0}\n" +
-                                  "City that hosted the most super bowls:\n\t{1}\n" +
-                                  "Stadium that hosted the most super bowls:\n\t{2}",
+                writer.WriteLine("The state that hosted the most super bowl games:\n\t{0}\n" +
+                                  "The city that hosted the most super bowl games:\n\t{1}\n" +
+                                  "The stadium that hosted the most super bowl games:\n\t{2}",
                                   HostingState, HostingCity, HostingStadium);
 
 
-                writer.WriteLine("Players who've won MVP multiple times:");
+                writer.WriteLine("These are the players who have won MVP multiple times: ");
                 var mvpGroup = from superBowl in sbList
                                group superBowl by superBowl.MVP into mvps
                                where mvps.Count() > 1
@@ -142,7 +142,7 @@ namespace project2
                     .OrderByDescending(team => team.Count())
                     .First().Key;
 
-                writer.WriteLine("Which team has lost the most super bowls?\n\t{0}", teamLosses);
+                writer.WriteLine("Which team lost the most super bowls?\n\t{0}", teamLosses);
 
 
                 var ptDiffQ = from superBowl in sbList
@@ -158,7 +158,7 @@ namespace project2
                 }
                 int averageAttendance = maxAttendance / sbList.Count();
 
-                writer.WriteLine("What is the average attendance of all the super bowls? \n\t{0} people", averageAttendance);
+                writer.WriteLine("What is the average attendance of all the super bowls? \n\t{0} people?", averageAttendance);
 
                 CSVFile.Close();
                 reader.Close();
