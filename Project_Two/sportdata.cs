@@ -10,8 +10,11 @@ namespace project2
     {
         static void Main(string[] args)
         {
-            string filePath = C:\Users\sivmarb\Source\Repos\project2\project2\Super_Bowl_Project.csv;
-            filePath = Console.ReadLine();
+            string filePath = Directory.GetCurrentDirectory();
+            string starter = Directory.GetParent(filePath).ToString();
+            string mid = Directory.GetParent(filePath).ToString();
+            string last = Directory.GetParent(filePath).ToString();
+            Console.WriteLine(last);
 
             if (File.Exists(filePath))
             {
