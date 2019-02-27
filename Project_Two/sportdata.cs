@@ -10,7 +10,7 @@ namespace project2
     {
         static void Main(string[] args)
         {
-            string filePath = C:\Users\sivmarb\Source\Repos\project2\project2;
+            string filePath = C:\Users\sivmarb\Source\Repos\project2\project2\Super_Bowl_Project.csv;
             filePath = Console.ReadLine();
 
             if (File.Exists(filePath))
