@@ -11,7 +11,7 @@ namespace project2
         static void Main(string[] args)
         {
             string filePath;
-            Console.WriteLine("Please enter the file path name for the file 'Super_Bowl_Project.csv': ");
+            //Console.WriteLine("Please enter the file path name for the file 'Super_Bowl_Project.csv': ");
             filePath = Console.ReadLine();
 
             if (File.Exists(filePath))
