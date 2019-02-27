@@ -10,8 +10,7 @@ namespace project2
     {
         static void Main(string[] args)
         {
-            string filePath;
-            //Console.WriteLine("Please enter the file path name for the file 'Super_Bowl_Project.csv': ");
+            string filePath = C:\Users\sivmarb\Source\Repos\project2\project2;
             filePath = Console.ReadLine();
 
             if (File.Exists(filePath))
